@@ -1,0 +1,87 @@
+:root{
+    /* variables for normal website */
+    --background_Primary: White;
+    --textcolor_Primary: #1b1b1b;
+
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+        /* variables for dark mode */
+        --background_Primary: #282828; 
+        --textcolor_Primary: #d3d3d3;
+    }
+}
+
+
+body, ul, li, h1, h2, a{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--background_Primary);
+    font-family: Helvetica;
+    color: var(--textcolor_Primary);
+}
+
+/* Header title */
+header{
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;   
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--background_Primary);
+}
+
+.class_MainTitle h1{
+    display: inline-block;
+    color: var(--textcolor_Primary);
+    text-decoration: none;
+}
+
+/* banner */
+.banner{
+    position: relative;
+    text-align: center;
+    top: 75px;
+    max-width: 100%;
+}
+.banner img{
+   max-width: 100%;
+   text-align: center;
+    opacity: 75%;
+}
+.banner div{
+    text-align: center;
+    position: relative;
+    columns: 3;
+    top: -15px;
+}
+
+/* main text body */
+main {
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+    text-align: justify;
+}
+.class_HomepageLinkList a{
+    line-height: 0;
+    text-decoration: none;
+}
+.class_HomepageLinkList img{
+    max-width: 100%;
+}
+
+
+/* psuedo classes */
+::selection{
+    background-color: #5a93c780;
+    color: var(--textcolor_Primary);
+}
