@@ -32,7 +32,7 @@ body{
 
 /* Header title */
 header{
-    padding: 20px;
+    padding: 20px 0px;
     text-align: center;
     position: fixed;
     width: 100%;   
