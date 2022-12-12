@@ -1,3 +1,4 @@
+/* dark mode stuff   ################################################## */
 :root{
     /* variables for normal website */
     --background_Primary: White;
@@ -11,9 +12,13 @@
         --background_Primary: #282828; 
         --textcolor_Primary: #d3d3d3;
     }
+    /* img {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+      } */
 }
 
-
+/* text styles ######################################################## */
 body, ul, li, h1, h2, a{
     margin: 0;
     padding: 0;
@@ -71,17 +76,51 @@ main {
     box-sizing: border-box;
     text-align: justify;
 }
+.class_HomepageLinkList{
+    list-style-type: none;
+    padding-top: 20px;
+}
 .class_HomepageLinkList a{
+    color: var(--textcolor_Primary);
     line-height: 0;
     text-decoration: none;
 }
 .class_HomepageLinkList img{
     max-width: 100%;
+    padding-bottom: 20px;
 }
 
 
-/* psuedo classes */
+/* psuedo classes ##################################################*/
 ::selection{
     background-color: #5a93c780;
     color: var(--textcolor_Primary);
+}
+
+/* Responsive design ############################################## */
+@media screen and (min-width: 500px){
+    
+}
+
+@media screen and (min-width: 700px){
+    
+}
+
+@media screen and (min-width: 900px){
+    .class_HomepageLinkList{
+        text-align: center;
+        margin: 20px 0;
+        white-space: nowrap;
+    }
+    .class_HomepageLinkList li{
+        display: inline-block;
+        width: 40%;
+        margin: 0px 5%;
+    }
+    .class_HomepageLinkList h3{
+        text-align: left;
+    }
+    .class_HomepageLinkList img{
+        
+    }
 }
