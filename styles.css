@@ -44,10 +44,16 @@ header{
     background-color: var(--background_Primary);
 }
 
-.class_MainTitle h1{
+.class_MainTitle {
     display: inline-block;
     color: var(--textcolor_Primary);
     text-decoration: none;
+    max-width: 100%;
+    width: 1200px;
+    text-align: left;
+}
+.class_MainTitle h1{
+    padding: 0 40px;
 }
 
 /* main text body #################################################### */
@@ -57,7 +63,7 @@ main {
     margin: 80px auto;
     padding: 0 40px;
     box-sizing: border-box;
-    text-align: center;
+    text-align: left;
 }
 .class_HR{
     margin-top: 0;
