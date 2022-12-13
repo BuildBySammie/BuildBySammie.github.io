@@ -2,15 +2,16 @@
 :root{
     /* variables for normal website */
     --background_Primary: White;
-    --textcolor_Primary: #1b1b1b;
+    --textcolor_Primary: #464646;
+    /* --textcolor_Headings: #4b4b4b; */
 
 }
 
 @media (prefers-color-scheme: dark){
     :root{
         /* variables for dark mode */
-        --background_Primary: #282828; 
-        --textcolor_Primary: #d3d3d3;
+        /* --background_Primary: #282828; 
+        --textcolor_Primary: #d3d3d3; */
     }
     /* img {
         -webkit-filter: grayscale(100%);
@@ -22,11 +23,12 @@
 body, ul, li, h1, h2, a{
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 body{
     background-color: var(--background_Primary);
-    font-family: Helvetica;
+    font-family: sans-serif;
     color: var(--textcolor_Primary);
 }
 
@@ -48,48 +50,54 @@ header{
     text-decoration: none;
 }
 
-/* banner */
-.banner{
-    position: relative;
-    text-align: center;
-    top: 75px;
-    max-width: 100%;
-}
-.banner img{
-   max-width: 100%;
-   text-align: center;
-    opacity: 75%;
-}
-.banner div{
-    text-align: center;
-    position: relative;
-    columns: 3;
-    top: -15px;
-}
-
-/* main text body */
+/* main text body #################################################### */
 main {
     max-width: 100%;
     width: 1200px;
     margin: 80px auto;
     padding: 0 40px;
     box-sizing: border-box;
-    text-align: justify;
+    text-align: center;
 }
-.class_HomepageLinkList{
-    list-style-type: none;
-    padding-top: 20px;
+.class_HR{
+    margin-top: 0;
 }
-.class_HomepageLinkList a{
+/* Portfolio links########################## */
+.class_HompagePortfolio h2{
+    margin-bottom:30px;
+}
+.class_HompagePortfolio li{
+    margin-bottom: 5%;
     color: var(--textcolor_Primary);
-    line-height: 0;
-    text-decoration: none;
+    display: block;
 }
-.class_HomepageLinkList img{
-    max-width: 100%;
-    padding-bottom: 20px;
+.class_HompagePortfolio a{
+    text-decoration: none;
+    color: var(--textcolor_Primary);
+}
+.class_HompagePortfolio img{
+    max-width: 80%;
+}
+.class_HompagePortfolio img:hover{
+    opacity: 75%;
+    transform: scale(1.01);
+}
+.class_HompagePortfolio h3{
+    font-weight: normal;
+    margin: 0;
 }
 
+/* Project links ############################### */
+
+
+
+/* Footer########################################################### */
+.class_Copyright{
+    text-align: center;
+    font-weight: lighter;
+    font-size: small;
+
+}
 
 /* psuedo classes ##################################################*/
 ::selection{
@@ -97,30 +105,38 @@ main {
     color: var(--textcolor_Primary);
 }
 
+
+
+
+
 /* Responsive design ############################################## */
 @media screen and (min-width: 500px){
     
 }
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 600px){
+    .class_HompagePortfolio{
+        margin: 20px 0;
+        white-space: nowrap;
+    }
+    .class_HompagePortfolio ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .class_HompagePortfolio li{
+        display: inline-block;
+        width: 40%;
+        margin: 0px auto;
+        margin-bottom: 3%;
+    }
+    .class_HompagePortfolio img{
+        max-width: 100%;
+    }
     
 }
 
 @media screen and (min-width: 900px){
-    .class_HomepageLinkList{
-        text-align: center;
-        margin: 20px 0;
-        white-space: nowrap;
-    }
-    .class_HomepageLinkList li{
-        display: inline-block;
-        width: 40%;
-        margin: 0px 5%;
-    }
-    .class_HomepageLinkList h3{
-        text-align: left;
-    }
-    .class_HomepageLinkList img{
-        
+    .class_HompagePortfolio li{
+        width: 30%;
     }
 }
