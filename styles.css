@@ -1,8 +1,9 @@
-/* dark mode stuff   ################################################## */
+/* dark mode stuff   #################################################################### */
 :root{
     /* variables for normal website */
     --background_Primary: White;
     --textcolor_Primary: #464646;
+    --textcolor_Hover: #353535;
     /* --textcolor_Headings: #4b4b4b; */
 
 }
@@ -19,7 +20,7 @@
       } */
 }
 
-/* text styles ######################################################## */
+/* text styles ######################################################################### */
 body, ul, li, h1, h2, a{
     margin: 0;
     padding: 0;
@@ -32,9 +33,9 @@ body{
     color: var(--textcolor_Primary);
 }
 
-/* Header title */
+/* Header title ########################################################*/
 header{
-    padding: 20px 0px;
+    padding-top: 20px;
     text-align: center;
     position: fixed;
     width: 100%;   
@@ -48,12 +49,16 @@ header{
     display: inline-block;
     color: var(--textcolor_Primary);
     text-decoration: none;
-    max-width: 100%;
     width: 1200px;
     text-align: left;
+    max-width: 100%;
 }
 .class_MainTitle h1{
     padding: 0 40px;
+}
+
+.class_MenuWords{
+    display: none;
 }
 
 /* main text body #################################################### */
@@ -82,7 +87,7 @@ main {
     color: var(--textcolor_Primary);
 }
 .class_HompagePortfolio img{
-    max-width: 80%;
+    max-width: 100%;
 }
 .class_HompagePortfolio img:hover{
     opacity: 75%;
@@ -105,7 +110,7 @@ main {
 
 }
 
-/* psuedo classes ##################################################*/
+/* psuedo classes ######################################################################*/
 ::selection{
     background-color: #5a93c780;
     color: var(--textcolor_Primary);
@@ -115,12 +120,44 @@ main {
 
 
 
-/* Responsive design ############################################## */
+/* Responsive design ################################################################### */
 @media screen and (min-width: 500px){
     
 }
 
 @media screen and (min-width: 600px){
+    /* header###################################################### */
+    
+    .class_MenuWords{
+        display: inline-block;
+        width: 1200px;
+        color: var(--textcolor_Primary);
+        text-decoration: none;
+        margin: 0;
+        z-index: 2;
+        white-space: nowrap;
+        text-align: right;
+        max-width: 100%;
+    }
+    .class_MenuWords li{
+        display: inline-block;
+    }
+    .class_MenuWords a{
+        text-decoration: none;
+        color: var(--textcolor_Primary);
+    }
+    .class_MenuWords h3{
+        font-weight: lighter;
+        padding: 0;
+        padding-right:40px;
+        margin:0;
+    }
+    .class_MenuWords h3:hover{
+        font-weight: bold;
+    }
+
+    /* main text body##############################################*/
+    /*  list################ */
     .class_HompagePortfolio{
         margin: 20px 0;
         white-space: nowrap;
@@ -131,13 +168,14 @@ main {
     }
     .class_HompagePortfolio li{
         display: inline-block;
-        width: 40%;
+        width: 45%;
         margin: 0px auto;
         margin-bottom: 3%;
     }
     .class_HompagePortfolio img{
         max-width: 100%;
     }
+
     
 }
 
