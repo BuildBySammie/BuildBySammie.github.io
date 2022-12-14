@@ -31,11 +31,12 @@ body{
     background-color: var(--background_Primary);
     font-family: sans-serif;
     color: var(--textcolor_Primary);
+    min-width: 400px;
 }
 
 /* Header title ########################################################*/
 header{
-    padding-top: 20px;
+    padding: 20px 0;
     text-align: center;
     position: fixed;
     width: 100%;   
@@ -43,14 +44,18 @@ header{
     top: 0;
     left: 0;
     background-color: var(--background_Primary);
+    min-width: 400px;
+}
+header div{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
 }
 
 .class_MainTitle {
     display: inline-block;
     color: var(--textcolor_Primary);
     text-decoration: none;
-    width: 1200px;
-    text-align: left;
     max-width: 100%;
 }
 .class_MainTitle h1{
@@ -63,8 +68,7 @@ header{
 
 /* main text body #################################################### */
 main {
-    max-width: 100%;
-    width: 1200px;
+    max-width: 1200px;
     margin: 80px auto;
     padding: 0 40px;
     box-sizing: border-box;
@@ -125,22 +129,21 @@ main {
     
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 630px){
     /* header###################################################### */
     
-    .class_MenuWords{
-        display: inline-block;
-        width: 1200px;
+    ul.class_MenuWords{
+        display: inline;
         color: var(--textcolor_Primary);
         text-decoration: none;
-        margin: 0;
-        z-index: 2;
-        white-space: nowrap;
+        float: right;
+        padding-top: 16px;
         text-align: right;
-        max-width: 100%;
     }
     .class_MenuWords li{
         display: inline-block;
+        width: 130px;
+        text-align: right;
     }
     .class_MenuWords a{
         text-decoration: none;
@@ -149,8 +152,10 @@ main {
     .class_MenuWords h3{
         font-weight: lighter;
         padding: 0;
-        padding-right:40px;
         margin:0;
+    }
+    h3.class_Contact{
+        padding-right: 40px;
     }
     .class_MenuWords h3:hover{
         font-weight: bold;
