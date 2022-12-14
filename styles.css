@@ -66,6 +66,91 @@ header div{
     display: none;
 }
 
+/* burger menuuuuu ########################################*/
+
+.nav-container {
+    display: inline;
+    position: relative;
+    float: right;
+    top: -28px;
+    left:-26px;
+    padding-right: 40px;
+}
+
+/* nav list######################### */
+.menu-items{
+    display: none;
+    max-width: 630px;
+    z-index: 10;
+}
+.menu-items a{
+    text-decoration: none;
+    color: var(--textcolor_Primary);
+    max-width: 630px;
+}
+
+/* Burger###################################### */
+.nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 20px;
+    width: 25px;
+    top: -4px;
+    left: -4px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+.nav-container .hamburger-lines {
+    display: inline;
+    height: 20px;
+    width: 25px;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nav-container .hamburger-lines .line {
+    display: inline;
+    height: 2px;
+    width: 100%;
+    background: #0e2431;
+}
+
+/* burger uncheck animation #######*/
+.nav-container .hamburger-lines .line1 {
+    transform-origin: right;
+    transition: transform 0.4s ease-in-out;
+}
+.nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+.nav-container .hamburger-lines .line3 {
+    transform-origin: right;
+    transition: transform 0.4s ease-in-out;
+}
+
+/* burger check animation #########*/
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+    display: block;
+}
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform-origin: right;
+     transform: rotate(-45deg);
+}
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+     transform: scaleY(0);
+}
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform-origin: right;
+    transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ section .menu-items {
+    display: block;
+}
+
 /* main text body #################################################### */
 main {
     max-width: 1200px;
@@ -77,6 +162,7 @@ main {
 .class_HR{
     margin-top: 0;
 }
+
 /* Portfolio links########################## */
 .class_HompagePortfolio h2{
     margin-bottom:30px;
@@ -102,10 +188,6 @@ main {
     margin: 0;
 }
 
-/* Project links ############################### */
-
-
-
 /* Footer########################################################### */
 .class_Copyright{
     text-align: center;
@@ -120,18 +202,15 @@ main {
     color: var(--textcolor_Primary);
 }
 
-
-
-
-
 /* Responsive design ################################################################### */
 @media screen and (min-width: 500px){
     
 }
-
 @media screen and (min-width: 630px){
     /* header###################################################### */
-    
+    .class_Hamburger{
+        display: none;
+    }
     ul.class_MenuWords{
         display: inline;
         color: var(--textcolor_Primary);
@@ -189,3 +268,9 @@ main {
         width: 30%;
     }
 }
+
+
+
+
+
+
