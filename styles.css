@@ -188,6 +188,28 @@ main {
     margin: 0;
 }
 
+/* About page############################################################################## */
+.class_AboutArticle{
+    margin-top: 30px;
+}
+.class_AboutMainPicture{
+    display: inline;
+    width: 100%;
+}
+.class_AboutArticleText{
+    display: inline;
+    margin-bottom:30px;
+    vertical-align: top;
+}
+article h2.class_AboutTitle{
+    display: block;
+    margin: 20px 0px;
+}
+article p.class_AboutText{
+    font-size:medium;
+    font-weight: lighter;
+}
+
 /* Footer########################################################### */
 .class_Copyright{
     text-align: center;
@@ -260,12 +282,41 @@ main {
         max-width: 100%;
     }
 
+    /* about page###################### */
+    .class_AboutMainPicture{
+        display: inline;
+        width: 50%;
+    }
+    div.class_AboutArticleText{
+        display: inline;
+        vertical-align: top;
+        margin-left: 10px;
+    }
+    article h2.class_AboutTitle{
+        display: inline-block;
+        margin: 0;
+        margin-bottom: 20px;
+        width: 45%;
+    }
+
+
     
 }
 
 @media screen and (min-width: 900px){
     .class_HompagePortfolio li{
         width: 30%;
+    }
+
+    /* about page##################### */
+    .class_AboutMainPicture{
+        width: 40%;
+    }
+    div.class_AboutArticleText{
+        margin-left: 20px;
+    }
+    article h2.class_AboutTitle{
+        width: 55%;
     }
 }
 
