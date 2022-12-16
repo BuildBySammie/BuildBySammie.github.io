@@ -46,7 +46,7 @@ header{
     background-color: var(--background_Primary);
     min-width: 400px;
 }
-header div{
+header div.class_HeaderDiv{
     max-width: 1200px;
     margin: 0 auto;
     text-align: left;
@@ -78,16 +78,32 @@ header div{
 }
 
 /* nav list######################### */
-.menu-items{
+.class_HamburgerWords{
     display: none;
-    max-width: 630px;
-    z-index: 10;
+    max-width: 100%;
+    padding: 0 40px;
+    padding-top: 15px;
+    text-align:center;
+
 }
-.menu-items a{
+.class_HamburgerWords li{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+.class_HamburgerWords a{
     text-decoration: none;
     color: var(--textcolor_Primary);
-    max-width: 630px;
 }
+.class_HamburgerWords h3{
+    font-weight: lighter;
+    padding: 0;
+    margin:0;
+}
+.class_HamburgerWords h3:hover{
+    font-weight: bold;
+}
+
 
 /* Burger###################################### */
 .nav-container .checkbox {
@@ -130,11 +146,21 @@ header div{
     transform-origin: right;
     transition: transform 0.4s ease-in-out;
 }
+/* main needs to be above the check changes */
+main {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+    text-align: left;
+}
+.class_HR{
+    margin-top: 0;
+}
 
 /* burger check animation #########*/
-.nav-container input[type="checkbox"]:checked ~ .menu-items {
-    display: block;
-}
+
+
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
     transform-origin: right;
      transform: rotate(-45deg);
@@ -146,22 +172,7 @@ header div{
     transform-origin: right;
     transform: rotate(45deg);
 }
-
-.nav-container input[type="checkbox"]:checked ~ section .menu-items {
-    display: block;
-}
-
 /* main text body #################################################### */
-main {
-    max-width: 1200px;
-    margin: 80px auto;
-    padding: 0 40px;
-    box-sizing: border-box;
-    text-align: left;
-}
-.class_HR{
-    margin-top: 0;
-}
 
 /* Portfolio links########################## */
 .class_HompagePortfolio h2{
