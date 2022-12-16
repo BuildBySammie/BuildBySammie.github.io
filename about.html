@@ -22,7 +22,7 @@
             </ul>
             <div class="class_Hamburger">
                 <div class="container nav-container">
-                    <input class="checkbox" type="checkbox" name="" id="" onclick="script_ShowMenu()"/>
+                    <input class="checkbox" type="checkbox" name="" id="id_HamburgerCheckbox" onclick="script_ShowMenu()"/>
                     <div class="hamburger-lines">
                       <span class="line line1"></span>
                       <span class="line line2"></span>
@@ -59,11 +59,12 @@
         <p class="class_Copyright">Copyright © 2022 BuildBySammie. All rights reserved buildbysammie@gmail.com</p>
     </footer>
     <script>
-        var var_Expanded = false;
+        var var_BurgerWords = document.getElementById("id_HamburgerWords");
+        var var_Main = document.getElementById("id_Main");
+        var var_Checkbox = document.getElementById("id_HamburgerCheckbox");
+
         function script_ShowMenu(){
-            var var_BurgerWords = document.getElementById("id_HamburgerWords");
-            var var_Main = document.getElementById("id_Main");
-            if (!var_Expanded){
+            if(var_Checkbox.checked && window.innerWidth < 630){
                 var_BurgerWords.style.display = "block";
                 var_Expanded = true;
                 var_Main.style.marginTop = "115px";
@@ -73,6 +74,13 @@
                 var_Main.style.marginTop = "80px";
             }
         }
+        function script_Resize(var_WindowWidth){
+            script_ShowMenu()
+            // yes this is a round about way to do it but it works and i have wasted an hour to try other stuff i give up
+        }
+        var var_WindowWidth = window.matchMedia("(max-width: 630px)")
+        var_WindowWidth.addListener(script_Resize)
        </script>
+       
 </body>
 </html>
