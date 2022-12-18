@@ -6,6 +6,7 @@
     --textcolor_Hover: #353535;
     --textcolor_h1: #464646;
     --textcolor_h3: #707070;
+    --textcolor_h4: #707070;
     /* --textcolor_Headings: #4b4b4b; */
 
 }
@@ -46,10 +47,12 @@ h2{
 }
 h3{
     font-size: 22px;
-    color: var(--textcolor_h3)
+    color: var(--textcolor_h3);
 }
 h4{
     font-size: 18px;
+    font-weight: normal;
+    color: var(--textcolor_h4);
 }
 
 /* Header title ########################################################*/
@@ -358,6 +361,12 @@ article p.class_AboutText{
         -ms-flex: 30%; 
         flex: 30%;
         max-width: 30%;
+        padding: 0 4px;
+    }
+    .class_GalleryColumnAP {
+        -ms-flex: 48%; 
+        flex: 48%;
+        max-width: 48%;
         padding: 0 4px;
     }
     .class_GalleryColumn img {
