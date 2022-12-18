@@ -64,7 +64,7 @@
         var var_Checkbox = document.getElementById("id_HamburgerCheckbox");
 
         function script_ShowMenu(){
-            if(var_Checkbox.checked && window.innerWidth < 630){
+            if(var_Checkbox.checked && window.innerWidth < 660){
                 var_BurgerWords.style.display = "block";
                 var_Expanded = true;
                 var_Main.style.marginTop = "115px";
@@ -78,7 +78,7 @@
             script_ShowMenu()
             // yes this is a round about way to do it but it works and i have wasted an hour to try other stuff i give up
         }
-        var var_WindowWidth = window.matchMedia("(max-width: 630px)")
+        var var_WindowWidth = window.matchMedia("(max-width: 660px)")
         var_WindowWidth.addListener(script_Resize)
        </script>
        

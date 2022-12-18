@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildBySammie Oculus Oven</title>
+    <link rel="stylesheet" href="/styles.css">
+
+</head>
+<body>
+    <header>
+        <div class="class_HeaderDiv">
+            <a href="/index.html" class="class_MainTitle"><h1>Build By Sammie</h1></a>
+            <ul class="class_MenuWords">
+                <li>
+                    <a href="/index.html"><h3 >Home</h3></a>
+                </li>
+                <li>
+                    <a href="/about.html" ><h3>About</h3></a>
+                </li>
+                <li>
+                    <a href="/contact.html"><h3 class="class_Contact">Contact</h3></a>
+                </li>
+            </ul>
+            <div class="class_Hamburger">
+                <div class="container nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="id_HamburgerCheckbox" onclick="script_ShowMenu()"/>
+                    <div class="hamburger-lines">
+                      <span class="line line1"></span>
+                      <span class="line line2"></span>
+                      <span class="line line3"></span>
+                    </div> 
+                </div>
+            </div>
+            <div class="class_HamburgerWords" id="id_HamburgerWords">
+                <ul>
+                    <li>
+                        <a href="/index.html"><h3 >Home</h3></a>
+                    </li>
+                    <li>
+                        <a href="/about.html" ><h3>About</h3></a>
+                    </li>
+                    <li>
+                        <a href="/contact.html"><h3 class="class_Contact">Contact</h3></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main id="id_Main" class="class_MainArticles">
+        <hr>
+        <article class="class_FurnitureArticle">
+            <h2>Oculus Oven</h2>
+            <img src="img/Oculus Oven/OculusOvden_Link.jpg" alt="Screw dirver">
+            <p>Date: November 2019 - March 2020 <br> Project Type: Group (5) <br> Role: Phisycal Design and Prototype</p>
+            <br>
+            <h3>Project Summary</h3>
+            <p>This was an inter faculty honours project. The main goal of the project was to better learn how to design for people who are visualy impaired. The project was hands on where we learned by doing.</p>
+            <br>
+            <h3>Process</h3>
+            <p>The goal of the project was to create a design that you could improve or help in the life of a visualy impaired person. In the early research stages we found that cooking is often an chore that can be dificult. And this dificulty only increases when appliences arn't desingend with a visual impairment in mind.</p>
+            <br>
+            <h4>Research</h4>
+            <p>The research started with two experiences with the goal to better empathize with visual impaired people. The first experience was at Muziem. Here we had multiple dark experiences, where we had to walk in a truly black room (I tried making a picture but as you can see it was rather dark). I for the first time truly exprience what it felt to have to function while you can't even see your own nose. The second experience was at an art centrum with art specialy made for the visual impaired. You could touch all the art pieces which was really intreseting, it created an new tactile layer that i hadn't experienced before. It inspired me to see the tactile experience in another light.</p>
+            <img src="img/Oculus Oven/cannot see anything.jpg" alt="">
+            <img src="img/Oculus Oven/tactile experience.png" alt="">
+            <p>With these experienes in mind we started to reresearch our area of cooking. We quickly realised that most products on the market are solutions physical problems, like cutting food or measuirng amounts. But there were almost no appliences specialy tailord for them. Thus we concluded that desinging an electric applience would be the best way to improve their life.</p>
+            <h4>Ideating</h4>
+            <p>During the ideating phase we quickly realised that an specialy desinged oven would be a great product to have for a visualy impaired person. Current ovens are always desinged with visual feedback, having an screen or using icons on buttons and the modern knobs often have a smooth turning feel with no tactile feedback. So how can they know what settings they have selected. This often translteds in them only using a couple of settings that they temselfs have indictated using special stickers.</p>
+            <p>In our opinion the best solution would be two fold, first have a physical oven that is specialy desingedn and two, have an app so the user can use their phone to control the oven. After having desinged our overal concept we split into three groups. One group worked on the app (two persons), one group worked on the physical prototype (me) and the last group worked on a server so the app could talk to the physical prototype (two persons).</p>
+            <img src="" alt="">
+            <br>
+            <h4>Physical Design</h4>
+            <p></p>
+            <img src="img/Oculus Oven/button desing.png" alt="">
+            <h4>Physical Prototype</h4>
+            <p></p>
+            <img src="img/Oculus Oven/3d print.jpg" alt="">
+            <img src="img/Oculus Oven/arudnio.JPG" alt="">
+            <p>The final step was to test the physical prototype with someone who visual impaired. Their input helped creating a better product becasue although they were really fond of the idea there were some small tweakes needed to the tactile features on the buttons.</p>
+        </article>
+        <!-- <br>
+        <hr>
+        <section class="class_Gallery">
+            <h2>Gallery</h2>
+            <div class="class_GalleryRow">
+                <div class="class_GalleryColumnAP">
+                    <img src="img/Advacned Prototyping/2.jpg" alt="" style="width: 100%;">
+                    <img src="img/Advacned Prototyping/1.jpg" alt="" style="width: 100%;">
+                </div>
+                <div class="class_GalleryColumnAP">
+                    <img src="img/Advacned Prototyping/4.jpg" alt="" style="width: 100%;">
+                    <img src="img/Advacned Prototyping/3.jpg" alt="" style="width: 100%;">
+                </div>
+            </div>
+        </section> -->
+        
+        
+    </main>
+    <footer>
+        <p class="class_Copyright">Copyright © 2022 BuildBySammie. All rights reserved buildbysammie@gmail.com</p>
+    </footer>
+    <script>
+        var var_BurgerWords = document.getElementById("id_HamburgerWords");
+        var var_Main = document.getElementById("id_Main");
+        var var_Checkbox = document.getElementById("id_HamburgerCheckbox");
+
+        function script_ShowMenu(){
+            if(var_Checkbox.checked && window.innerWidth < 660){
+                var_BurgerWords.style.display = "block";
+                var_Expanded = true;
+                var_Main.style.marginTop = "115px";
+            } else {
+                var_BurgerWords.style.display = "none";
+                var_Expanded = false;
+                var_Main.style.marginTop = "90px";
+            }
+        }
+        function script_Resize(var_WindowWidth){
+            script_ShowMenu()
+            // yes this is a round about way to do it but it works and i have wasted an hour to try other stuff i give up
+        }
+        var var_WindowWidth = window.matchMedia("(max-width: 660px)")
+        var_WindowWidth.addListener(script_Resize)
+    </script>
+</body>
+</html>

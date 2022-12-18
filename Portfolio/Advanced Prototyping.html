@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BuildBySammie Homepage</title>
+    <title>BuildBySammie Advanced Prototyping</title>
     <link rel="stylesheet" href="/styles.css">
 
 </head>
@@ -13,6 +13,9 @@
         <div class="class_HeaderDiv">
             <a href="/index.html" class="class_MainTitle"><h1>Build By Sammie</h1></a>
             <ul class="class_MenuWords">
+                <li>
+                    <a href="/index.html"><h3 >Home</h3></a>
+                </li>
                 <li>
                     <a href="/about.html" ><h3>About</h3></a>
                 </li>
@@ -32,6 +35,9 @@
             </div>
             <div class="class_HamburgerWords" id="id_HamburgerWords">
                 <ul>
+                    <li>
+                        <a href="/index.html"><h3 >Home</h3></a>
+                    </li>
                     <li>
                         <a href="/about.html" ><h3>About</h3></a>
                     </li>
@@ -130,7 +136,7 @@
         var var_Checkbox = document.getElementById("id_HamburgerCheckbox");
 
         function script_ShowMenu(){
-            if(var_Checkbox.checked && window.innerWidth < 630){
+            if(var_Checkbox.checked && window.innerWidth < 660){
                 var_BurgerWords.style.display = "block";
                 var_Expanded = true;
                 var_Main.style.marginTop = "115px";
@@ -144,7 +150,7 @@
             script_ShowMenu()
             // yes this is a round about way to do it but it works and i have wasted an hour to try other stuff i give up
         }
-        var var_WindowWidth = window.matchMedia("(max-width: 630px)")
+        var var_WindowWidth = window.matchMedia("(max-width: 660px)")
         var_WindowWidth.addListener(script_Resize)
     </script>
 </body>

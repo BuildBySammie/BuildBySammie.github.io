@@ -59,22 +59,22 @@
                         <h3>Exo Cooker</h3>
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="/Portfolio/Echo.html">
                         <img src="img/homepage/ECHO_Link.jpg" alt="">
                         <h3>Echo</h3>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="/Portfolio/Advanced Prototyping.html">
+                        <img src="img/homepage/AdvacnedPrototyping_Link.png" alt="">
+                        <h3>Advanced Prototyping</h3>
                     </a>
                 </li>
                 <li>
                     <a href="/Portfolio/Oculus Oven.html">
                         <img src="img/homepage/OculusOven_Link.jpg" alt="">
                         <h3>Oculus Oven</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="/Portfolio/Advanced Prototyping.html">
-                        <img src="img/homepage/AdvacnedPrototyping_Link.png" alt="">
-                        <h3>Advanced Prototyping</h3>
                     </a>
                 </li>
                 <li>
@@ -114,21 +114,21 @@
         var var_Checkbox = document.getElementById("id_HamburgerCheckbox");
 
         function script_ShowMenu(){
-            if(var_Checkbox.checked && window.innerWidth < 630){
+            if(var_Checkbox.checked && window.innerWidth < 660){
                 var_BurgerWords.style.display = "block";
                 var_Expanded = true;
                 var_Main.style.marginTop = "115px";
             } else {
                 var_BurgerWords.style.display = "none";
                 var_Expanded = false;
-                var_Main.style.marginTop = "80px";
+                var_Main.style.marginTop = "90px";
             }
         }
         function script_Resize(var_WindowWidth){
             script_ShowMenu()
             // yes this is a round about way to do it but it works and i have wasted an hour to try other stuff i give up
         }
-        var var_WindowWidth = window.matchMedia("(max-width: 630px)")
+        var var_WindowWidth = window.matchMedia("(max-width: 660px)")
         var_WindowWidth.addListener(script_Resize)
     </script>
 </body>
