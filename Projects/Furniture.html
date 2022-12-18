@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildBySammie Homepage</title>
+    <link rel="stylesheet" href="/styles.css">
+
+</head>
+<body>
+    <header>
+        <div class="class_HeaderDiv">
+            <a href="/index.html" class="class_MainTitle"><h1>Build By Sammie</h1></a>
+            <ul class="class_MenuWords">
+                <li>
+                    <a href="/about.html" ><h3>About</h3></a>
+                </li>
+                <li>
+                    <a href="/contact.html"><h3 class="class_Contact">Contact</h3></a>
+                </li>
+            </ul>
+            <div class="class_Hamburger">
+                <div class="container nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="id_HamburgerCheckbox" onclick="script_ShowMenu()"/>
+                    <div class="hamburger-lines">
+                      <span class="line line1"></span>
+                      <span class="line line2"></span>
+                      <span class="line line3"></span>
+                    </div> 
+                </div>
+            </div>
+            <div class="class_HamburgerWords" id="id_HamburgerWords">
+                <ul>
+                    <li>
+                        <a href="/about.html" ><h3>About</h3></a>
+                    </li>
+                    <li>
+                        <a href="/contact.html"><h3 class="class_Contact">Contact</h3></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main id="id_Main" class="class_MainArticles">
+        <hr>
+        <article class="class_FurnitureArticle">
+            <h2>Welding Projects</h2>
+            <img src="img/Furniture/Furniture_Stick.jpg" alt="Stick welding to empty gas canister to gether">
+            <p>Building has always been a big part of my live and welding has become one of my most favourite way to build. My father thought me to weld stick when I was thirteen and I have been welding ever since. My first project was a wood burner but now I mostly create indoor and outdoor furniture for family and friends. </p>
+            <br>
+            <h3>My first commision</h3>
+            <img src="img/Furniture/Furniture_FirstComisison.jpg" alt="">
+            <p>My first big commission was a dining room set which was my first welding project with gasless MIG. The set consists out of one big table with a large bench and a table extender with two stools. The extender can be used to enlarge the size of the table (as the name creatively suggests) so dinner parties can be held with more people. But if it is not needed it can be used as a side table and the stools can be stored between the legs.</p>
+            <br>
+            <h3>Audio Rack</h3>
+            <img src="img/Furniture/Furniture_AudioRack.JPG" alt="">
+            <p>My latest project was an audio rack. The goal was to tidy up my audio equipment and give it a great home. I wanted a design that looked like it was a single piece of steel snaking around the shelfs. To accomplish this I used 20 by 20mm square tube steel that was cut in such a way that all the manufacturing marks of the steel tube would flow as a single line.  Which created the appearance of a single tube flowing around the shelfs.</p>
+        </article>
+        <br>
+        <hr>
+        <section class="class_Gallery">
+            <h2>Gallery</h2>
+            <div class="class_GalleryRow">
+                <div class="class_GalleryColumn">
+                    <img src="img/Furniture/1.jpg" alt="" style="width: 100%;">
+                    <img src="img/Furniture/2.jpg" alt="" style="width: 100%;">
+                    <img src="img/Furniture/3.jpg" alt="" style="width: 100%;">
+                </div>
+                <div class="class_GalleryColumn">
+                    <img src="img/Furniture/4.JPG" alt="" style="width: 100%;">
+                    <img src="img/Furniture/5.jpg" alt="" style="width: 100%;">
+                    <img src="img/Furniture/8.jpg" alt="" style="width: 100%;">
+                </div>
+                <div class="class_GalleryColumn">
+                    <img src="img/Furniture/9.jpg" alt="" style="width: 100%;">
+                    <img src="img/Furniture/6.jpg" alt="" style="width: 100%;">
+                    <img src="img/Furniture/7.JPG" alt="" style="width: 100%;">
+                </div>
+            </div>
+        </section>
+        
+        
+    </main>
+    <footer>
+        <p class="class_Copyright">Copyright © 2022 BuildBySammie. All rights reserved buildbysammie@gmail.com</p>
+    </footer>
+    <script>
+        var var_BurgerWords = document.getElementById("id_HamburgerWords");
+        var var_Main = document.getElementById("id_Main");
+        var var_Checkbox = document.getElementById("id_HamburgerCheckbox");
+
+        function script_ShowMenu(){
+            if(var_Checkbox.checked && window.innerWidth < 630){
+                var_BurgerWords.style.display = "block";
+                var_Expanded = true;
+                var_Main.style.marginTop = "115px";
+            } else {
+                var_BurgerWords.style.display = "none";
+                var_Expanded = false;
+                var_Main.style.marginTop = "90px";
+            }
+        }
+        function script_Resize(var_WindowWidth){
+            script_ShowMenu()
+            // yes this is a round about way to do it but it works and i have wasted an hour to try other stuff i give up
+        }
+        var var_WindowWidth = window.matchMedia("(max-width: 630px)")
+        var_WindowWidth.addListener(script_Resize)
+    </script>
+</body>
+</html>

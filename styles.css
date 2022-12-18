@@ -34,6 +34,7 @@ body{
     min-width: 400px;
 }
 
+
 /* Header title ########################################################*/
 header{
     padding: 20px 0;
@@ -65,6 +66,10 @@ header div.class_HeaderDiv{
 .class_MenuWords{
     display: none;
 }
+header hr{
+margin: 8px 40px;
+}
+
 
 /* burger menuuuuu ########################################*/
 
@@ -154,6 +159,13 @@ main {
     box-sizing: border-box;
     text-align: left;
 }
+.class_MainArticles{
+    max-width: 800px;
+    margin: 90px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+    text-align: left;
+}
 .class_HR{
     margin-top: 0;
 }
@@ -219,6 +231,14 @@ article h2.class_AboutTitle{
 article p.class_AboutText{
     font-size:medium;
     font-weight: lighter;
+}
+/* Furniture page######################################################################### */
+.class_FurnitureArticle img{
+    /* margin-top: 16px; */
+    max-width: 100%;
+}
+.class_FurnitureArticle h2, .class_Gallery h2{
+    margin-bottom: 16px;
 }
 
 /* Footer########################################################### */
@@ -309,6 +329,26 @@ article p.class_AboutText{
         margin-bottom: 20px;
         width: 45%;
     }    
+    /* Gallery####################### */
+    .class_GalleryRow{
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+    .class_GalleryColumn {
+        -ms-flex: 30%; /* IE10 */
+        flex: 30%;
+        max-width: 30%;
+        padding: 0 4px;
+    }
+    .class_GalleryColumn img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+
 }
 
 @media screen and (min-width: 900px){
