@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildBySammie Ah Shortcut</title>
+    <link rel="stylesheet" href="/styles.css">
+
+</head>
+<body>
+    <header>
+        <div class="class_HeaderDiv">
+            <a href="/index.html" class="class_MainTitle"><h1>Build By Sammie</h1></a>
+            <ul class="class_MenuWords">
+                <li>
+                    <a href="/index.html"><h3 >Home</h3></a>
+                </li>
+                <li>
+                    <a href="/about.html" ><h3>About</h3></a>
+                </li>
+                <li>
+                    <a href="/contact.html"><h3 class="class_Contact">Contact</h3></a>
+                </li>
+            </ul>
+            <div class="class_Hamburger">
+                <div class="container nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="id_HamburgerCheckbox" onclick="script_ShowMenu()"/>
+                    <div class="hamburger-lines">
+                      <span class="line line1"></span>
+                      <span class="line line2"></span>
+                      <span class="line line3"></span>
+                    </div> 
+                </div>
+            </div>
+            <div class="class_HamburgerWords" id="id_HamburgerWords">
+                <ul>
+                    <li>
+                        <a href="/index.html"><h3 >Home</h3></a>
+                    </li>
+                    <li>
+                        <a href="/about.html" ><h3>About</h3></a>
+                    </li>
+                    <li>
+                        <a href="/contact.html"><h3 class="class_Contact">Contact</h3></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main id="id_Main" class="class_MainArticles">
+        <hr>
+        <article class="class_FurnitureArticle">
+            <h2>Ah Shortcut</h2>
+            <img src="img/Ah Shortcut/AHShortcut_Link.png" alt="Screw dirver">
+            <p>Date: February - April 2021 <br> Project Type: Group (3) <br> Role: Routing system & AR functionality</p>
+            <br>
+            <h3>Project Summary</h3>
+            <p></p>
+            <br>
+            <h3>Process</h3>
+            <p></p>
+        </article>
+        <!-- <br>
+        <hr>
+        <section class="class_Gallery">
+            <h2>Gallery</h2>
+            <div class="class_GalleryRow">
+                <div class="class_GalleryColumnAP">
+                    <img src="img/Advacned Prototyping/2.jpg" alt="" style="width: 100%;">
+                    <img src="img/Advacned Prototyping/1.jpg" alt="" style="width: 100%;">
+                </div>
+                <div class="class_GalleryColumnAP">
+                    <img src="img/Advacned Prototyping/4.jpg" alt="" style="width: 100%;">
+                    <img src="img/Advacned Prototyping/3.jpg" alt="" style="width: 100%;">
+                </div>
+            </div>
+        </section> -->
+        
+        
+    </main>
+    <footer>
+        <p class="class_Copyright">Copyright © 2022 BuildBySammie. All rights reserved buildbysammie@gmail.com</p>
+    </footer>
+    <script>
+        var var_BurgerWords = document.getElementById("id_HamburgerWords");
+        var var_Main = document.getElementById("id_Main");
+        var var_Checkbox = document.getElementById("id_HamburgerCheckbox");
+
+        function script_ShowMenu(){
+            if(var_Checkbox.checked && window.innerWidth < 660){
+                var_BurgerWords.style.display = "block";
+                var_Expanded = true;
+                var_Main.style.marginTop = "125px";
+            } else {
+                var_BurgerWords.style.display = "none";
+                var_Expanded = false;
+                var_Main.style.marginTop = "90px";
+            }
+        }
+        function script_Resize(var_WindowWidth){
+            script_ShowMenu()
+            // yes this is a round about way to do it but it works and i have wasted an hour to try other stuff i give up
+        }
+        var var_WindowWidth = window.matchMedia("(max-width: 660px)")
+        var_WindowWidth.addListener(script_Resize)
+    </script>
+</body>
+</html>
