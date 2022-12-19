@@ -364,7 +364,21 @@ article p.class_AboutTextQoute{
         margin: 0;
         margin-bottom: 20px;
         width: 45%;
-    }    
+    } 
+    /* video stuff */
+    .class_AhVideoContainer{
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+    }
+    .class_AhVideo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
     /* Gallery####################### */
     .class_GalleryRow{
         display: -ms-flexbox; 
@@ -389,7 +403,13 @@ article p.class_AboutTextQoute{
         margin-top: 8px;
         vertical-align: middle;
         width: 100%;
-      }
+    }
+    .class_ToTallImage{
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
 
 }
 
