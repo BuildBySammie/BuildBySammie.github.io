@@ -15,7 +15,11 @@
     :root{
         /* variables for dark mode */
         /* --background_Primary: #282828; 
-        --textcolor_Primary: #d3d3d3; */
+        --textcolor_Primary: #d3d3d3;
+        --textcolor_Hover: #8d8d8d;
+        --textcolor_h1: #d3d3d3;
+        --textcolor_h3: #d3d3d3;
+        --textcolor_h4: #d3d3d3; */
     }
     /* img {
         -webkit-filter: grayscale(100%);
@@ -267,7 +271,13 @@ article p.class_AboutText{
     text-align: center;
     font-weight: lighter;
     font-size: small;
-
+}
+.class_FooterPageSmall{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
 /* psuedo classes ######################################################################*/
