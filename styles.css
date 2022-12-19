@@ -257,6 +257,10 @@ article p.class_AboutText{
     font-size:medium;
     font-weight: lighter;
 }
+article p.class_AboutTextQoute{
+    font-size: 22px;
+    text-align: center;
+}
 /* Furniture page######################################################################### */
 .class_FurnitureArticle img{
     /* margin-top: 16px; */
