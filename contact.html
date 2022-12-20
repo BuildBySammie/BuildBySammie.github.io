@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildBySammie About</title>
+    <link rel="stylesheet" href="/styles.css">
+
+</head>
+<body>
+    <header>
+        <div class="class_HeaderDiv">
+            <a href="/index.html" class="class_MainTitle"><h1>Build By Sammie</h1></a>
+            <ul class="class_MenuWords">
+                <li>
+                    <a href="/index.html" ><h3>Home</h3></a>
+                </li>
+                <li>
+                    <a href="/about.html"><h3 class="class_Contact">About</h3></a>
+                </li>
+            </ul>
+            <div class="class_Hamburger">
+                <div class="container nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="id_HamburgerCheckbox" onclick="script_ShowMenu()"/>
+                    <div class="hamburger-lines">
+                      <span class="line line1"></span>
+                      <span class="line line2"></span>
+                      <span class="line line3"></span>
+                    </div> 
+                </div>
+            </div>
+            <div class="class_HamburgerWords" id="id_HamburgerWords">
+                <ul>
+                    <li>
+                        <a href="/index.html" ><h3>Home</h3></a>
+                    </li>
+                    <li>
+                        <a href="/about.html"><h3 class="class_Contact">About</h3></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main id="id_Main">
+        <hr>
+        <article class="class_ContactArticle">
+            
+            <div class="class_AboutArticleText">
+                <h2>Hello, want to contact me?</h2>
+                <h4>For questions / remarks or anything else please email me at:</h4>
+                <h1>buildbysammie@gmail.com</h1>
+            </div>
+    </main>
+    <footer class="class_FooterPageSmall">
+        <p class="class_Copyright">Copyright © 2022 BuildBySammie. All rights reserved buildbysammie@gmail.com</p>
+    </footer>
+    <script>
+        var var_BurgerWords = document.getElementById("id_HamburgerWords");
+        var var_Main = document.getElementById("id_Main");
+        var var_Checkbox = document.getElementById("id_HamburgerCheckbox");
+
+        function script_ShowMenu(){
+            if(var_Checkbox.checked && window.innerWidth < 660){
+                var_BurgerWords.style.display = "block";
+                var_Expanded = true;
+                var_Main.style.marginTop = "125px";
+            } else {
+                var_BurgerWords.style.display = "none";
+                var_Expanded = false;
+                var_Main.style.marginTop = "90px";
+            }
+        }
+        function script_Resize(var_WindowWidth){
+            script_ShowMenu()
+            // yes this is a round about way to do it but it works and i have wasted an hour to try other stuff i give up
+        }
+        var var_WindowWidth = window.matchMedia("(max-width: 660px)")
+        var_WindowWidth.addListener(script_Resize)
+       </script>
+       
+</body>
+</html>

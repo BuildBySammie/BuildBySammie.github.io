@@ -283,6 +283,12 @@ article p.class_AboutTextQoute{
     width: 100%;
     height: 100%;
 }
+/* contact */
+.class_ContactArticle{
+    text-align: center;
+    margin-top: 20vh;
+    vertical-align: center;
+}
 
 /* Footer########################################################### */
 .class_Copyright{
