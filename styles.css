@@ -161,7 +161,7 @@ margin: 8px 40px;
     display: inline;
     height: 2px;
     width: 100%;
-    background: #0e2431;
+    background: var(--textcolor_Primary);
 }
 
 /* burger uncheck animation #######*/
